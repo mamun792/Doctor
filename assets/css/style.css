@@ -1,0 +1,114 @@
+*body{
+	width: 100%;
+	height: 100%;
+}
+.carousel-item.mamun{
+	display: flex;
+}
+.carousel-item.mamun img{
+	width: 33%;
+}
+
+.header{
+	margin: 0 3rem;
+}
+ul{
+	list-style-type: none;
+}
+.login-signup{
+	margin: 1rem;
+	border: 2px solid #09e5ab;
+	padding: 0.5rem;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 15px;
+}
+.login-signup:hover{
+	
+	border: 2px solid #09e5ab;
+	background-color: #09e5ab;
+}
+
+.hospital-image{
+	padding-top: 1rem;
+	padding-right: 1rem;
+	color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+}
+.banner-image image{
+	width: 100%;
+	height: 20px;
+}
+.contact-phone{
+	padding-top: 1rem;
+	line-height: 0.6rem;
+}
+.search-box{
+	
+}
+.search-box .search-btn{
+	color: #09e5ab;
+	font-size: 30px;
+	width: 50px;
+    height: 50px;
+	margin-top: -0.5rem;
+}
+.clinic-and-specialites .img-fluid{
+	padding: 2rem;
+    box-shadow: 10px 10px 13px rgb(0 0 0 / 30%);
+    border-radius: 30px; 
+	margin: 2rem;
+    background: #fff;
+}
+.clinic-and-specialites .specialites-text{
+	font-size: 16px;
+    font-weight: 500;
+	text-align: center;
+}
+.title a{
+	text-decoration: none;
+}
+.rating i.filled{
+	color: #f4c150;
+}
+.available-info ol,ul{
+    padding-left: 0rem;
+}
+/* .row.row-sm > div {
+	margin-left: 3px;
+
+} */
+
+@media only screen and (max-width: 600px) {
+  .card{
+	margin-left: 5rem;
+  }
+}
+
+
+
+
+
+/* start doctor-dashboard.html */
+
+.breadcrumb-bar{
+	margin-top: 3rem;
+	background-color: #15558d;
+	height: 4rem;
+}
+
+.doctor-dashboard-nav{
+	display: flex;
+	flex-direction: row;
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+}
+.doctor-dashboard-nav > h6{
+	padding: 1rem;
+}
+
+
+/* end doctor-dashboard.html */

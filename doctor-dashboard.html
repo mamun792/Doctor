@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/doctor-dashboard.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="logo">
+        <img src="assets/img/favicon.png" alt="" />
+        <h2>Dynamic</h2>
+      </div>
+
+      <div class="doctor-des">
+        <img src="assets/img/doctors/doctor-01.jpg" alt="" />
+        <h3>Dr. Darren Elder</h3>
+        <span>BDS, MDS - Oral & Maxillofacial Surgery</span>
+      </div>
+
+      <div class="items">
+        <li>
+          <i class="fa-solid fa-globe"></i>
+          <a href="doctor-dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-user"></i>
+          <a href="appointments.html">Appointment</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-user"></i>
+          <a href="my-patients.html">My Patients</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i>
+          <a href="schedule-timings.html">Schedule Timings</a>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-file-lines"></i>
+          <a href="invoices.html">Invoices</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-star"></i>
+          <a href="#">Reviews</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-gear"></i>
+          <a href="doctor-profile-settings.html">Profile Settings</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-key"></i>
+          <a href="#">Change Password</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <a href="#">Logout</a>
+        </li>
+      </div>
+    </section>
+
+    <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+
+        <div class="profile">
+          <i class="fa-solid fa-bell"></i>
+          <img src="assets/img/patients/patient1.jpg" alt="" />
+        </div>
+      </div>
+
+      <h3 class="i-name">Patient Appoinment</h3>
+
+      <div class="values">
+        <div class="val-box">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <h3>8,267</h3>
+            <span>New Users</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          <div>
+            <h3>267</h3>
+            <span>Products Sell</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          <div>
+            <h3>200,521</h3>
+            <span>Total Orders</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <div>
+            <h3>$8,267</h3>
+            <span>This Monts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <div class="patient-appoinment">
+          <div class="upcoming">Upcoming</div>
+          <div class="today">Today</div>
+        </div>
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>Patient Name</td>
+              <td>Appt Date</td>
+              <td>Purpose</td>
+              <td>Type</td>
+              <td>Paid Amount</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="people">
+                <img src="assets/img/patients/patient2.jpg" alt="" />
+                <div class="people-de">
+                  <h5>John Doc</h5>
+                  <p>john@example.com</p>
+                </div>
+              </td>
+              <td class="date">
+                <h5>14 Nov 2019</h5>
+                <p>6.00 PM</p>
+              </td>
+              <td class="people-des">
+                <h5>Fever</h5>
+              </td>
+              <td class="active">
+                <h5>Old Patient</h5>
+              </td>
+              <td class="role">
+                <p>$300</p>
+              </td>
+              <td class="edit">
+                <span class="edit-btn">
+                  <i class="fa-regular fa-eye"></i><a href="#">View</a></span
+                >
+                <span class="edit-btn"
+                  ><i class="fa-solid fa-check"></i><a href="#">Accept</a></span
+                >
+                <span class="edit-btn">
+                  <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="people">
+                <img src="assets/img/patients/patient3.jpg" alt="" />
+                <div class="people-de">
+                  <h5>John Doc</h5>
+                  <p>john@example.com</p>
+                </div>
+              </td>
+              <td class="date">
+                <h5>14 Nov 2019</h5>
+                <p>6.00 PM</p>
+              </td>
+              <td class="people-des">
+                <h5>Fever</h5>
+              </td>
+              <td class="active">
+                <h5>Old Patient</h5>
+              </td>
+              <td class="role">
+                <p>$300</p>
+              </td>
+              <td class="edit">
+                <span class="edit-btn">
+                  <i class="fa-regular fa-eye"></i><a href="#">View</a></span
+                >
+                <span class="edit-btn"
+                  ><i class="fa-solid fa-check"></i><a href="#">Accept</a></span
+                >
+                <span class="edit-btn">
+                  <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="people">
+                <img src="assets/img/patients/patient4.jpg" alt="" />
+                <div class="people-de">
+                  <h5>John Doc</h5>
+                  <p>john@example.com</p>
+                </div>
+              </td>
+              <td class="date">
+                <h5>14 Nov 2019</h5>
+                <p>6.00 PM</p>
+              </td>
+              <td class="people-des">
+                <h5>Fever</h5>
+              </td>
+              <td class="active">
+                <h5>Old Patient</h5>
+              </td>
+              <td class="role">
+                <p>$300</p>
+              </td>
+              <td class="edit">
+                <span class="edit-btn">
+                  <i class="fa-regular fa-eye"></i><a href="#">View</a></span
+                >
+                <span class="edit-btn"
+                  ><i class="fa-solid fa-check"></i><a href="#">Accept</a></span
+                >
+                <span class="edit-btn">
+                  <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="people">
+                <img src="assets/img/patients/patient5.jpg" alt="" />
+                <div class="people-de">
+                  <h5>John Doc</h5>
+                  <p>john@example.com</p>
+                </div>
+              </td>
+              <td class="date">
+                <h5>14 Nov 2019</h5>
+                <p>6.00 PM</p>
+              </td>
+              <td class="people-des">
+                <h5>Fever</h5>
+              </td>
+              <td class="active">
+                <h5>Old Patient</h5>
+              </td>
+              <td class="role">
+                <p>$300</p>
+              </td>
+              <td class="edit">
+                <span class="edit-btn">
+                  <i class="fa-regular fa-eye"></i><a href="#">View</a></span
+                >
+                <span class="edit-btn"
+                  ><i class="fa-solid fa-check"></i><a href="#">Accept</a></span
+                >
+                <span class="edit-btn">
+                  <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="people">
+                <img src="assets/img/patients/patient6.jpg" alt="" />
+                <div class="people-de">
+                  <h5>John Doc</h5>
+                  <p>john@example.com</p>
+                </div>
+              </td>
+              <td class="date">
+                <h5>14 Nov 2019</h5>
+                <p>6.00 PM</p>
+              </td>
+              <td class="people-des">
+                <h5>Fever</h5>
+              </td>
+              <td class="active">
+                <h5>Old Patient</h5>
+              </td>
+              <td class="role">
+                <p>$300</p>
+              </td>
+              <td class="edit">
+                <span class="edit-btn">
+                  <i class="fa-regular fa-eye"></i><a href="#">View</a></span
+                >
+                <span class="edit-btn"
+                  ><i class="fa-solid fa-check"></i><a href="#">Accept</a></span
+                >
+                <span class="edit-btn">
+                  <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="people">
+                <img src="assets/img/patients/patient7.jpg" alt="" />
+                <div class="people-de">
+                  <h5>John Doc</h5>
+                  <p>john@example.com</p>
+                </div>
+              </td>
+              <td class="date">
+                <h5>14 Nov 2019</h5>
+                <p>6.00 PM</p>
+              </td>
+              <td class="people-des">
+                <h5>Fever</h5>
+              </td>
+              <td class="active">
+                <h5>Old Patient</h5>
+              </td>
+              <td class="role">
+                <p>$300</p>
+              </td>
+              <td class="edit">
+                <span class="edit-btn">
+                  <i class="fa-regular fa-eye"></i><a href="#">View</a></span
+                >
+                <span class="edit-btn"
+                  ><i class="fa-solid fa-check"></i><a href="#">Accept</a></span
+                >
+                <span class="edit-btn">
+                  <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a></span
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("#menu").toggleClass("active");
+      });
+    </script>
+  </body>
+</html>

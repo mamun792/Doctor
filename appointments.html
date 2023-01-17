@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/appointments.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="logo">
+        <img src="assets/img/favicon.png" alt="" />
+        <h2>Dynamic</h2>
+      </div>
+
+      <div class="doctor-des">
+        <img src="assets/img/doctors/doctor-01.jpg" alt="" />
+        <h3>Dr. Darren Elder</h3>
+        <span>BDS, MDS - Oral & Maxillofacial Surgery</span>
+      </div>
+
+      <div class="items">
+        <li>
+          <i class="fa-solid fa-globe"></i>
+          <a href="doctor-dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-user"></i>
+          <a href="appointments.html">Appointment</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-user"></i>
+          <a href="my-patients.html">My Patients</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i>
+          <a href="schedule-timings.html">Schedule Timings</a>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-file-lines"></i>
+          <a href="invoices.html">Invoices</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-star"></i>
+          <a href="#">Reviews</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-gear"></i>
+          <a href="doctor-profile-settings.html">Profile Settings</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-key"></i>
+          <a href="#">Change Password</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <a href="#">Logout</a>
+        </li>
+      </div>
+    </section>
+
+    <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+
+        <div class="profile">
+          <i class="fa-solid fa-bell"></i>
+          <img src="assets/img/patients/patient1.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="patients">
+        <div class="card">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient1.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient8.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient7.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient6.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient5.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient4.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient3.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="patients-info">
+            <div class="patients-image">
+              <img src="assets/img/patients/patient2.jpg" alt="" />
+            </div>
+            <div class="patients-details">
+              <h3>Richard Wilson</h3>
+              <p><i class="fa-regular fa-clock"></i> 14 Nov 2019, 10.00 AM</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Newyork, United States
+              </p>
+              <p><i class="fa-solid fa-envelope"></i> richard@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> +1 923 782 4575</p>
+            </div>
+          </div>
+          <div class="Patients-btn">
+            <div class="edit-btn">
+              <i class="fa-regular fa-eye"></i><a href="#">View</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-check"></i><a href="#">Accept</a>
+            </div>
+            <div class="edit-btn">
+              <i class="fa-solid fa-xmark"></i><a href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("#menu").toggleClass("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../assets/css/Patient/Patients_Dashboard.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="logo">
+        <img src="../assets/img/favicon.png" alt="" />
+        <h2>Dynamic</h2>
+      </div>
+
+      <div class="doctor-des">
+        <img src="../assets/img/patients/patient10.jpg  " alt="" />
+        <h3>Richard Wilson</h3>
+        <i class="fa-solid fa-cake-candles"></i
+        ><span style="margin-left: 10px">24 Jul 1983, 38 years</span><br />
+        <i class="fa-solid fa-location-dot"></i
+        ><span style="margin-left: 10px"> Newyork, USA</span>
+      </div>
+
+      <div class="items">
+        <li>
+          <i class="fa-solid fa-globe"></i>
+          <a href="../Patient/Patients_Dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-user"></i>
+          <a href="../Patient/Favourites.html">Favourites</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-message"></i>
+          <a href="../Patient/Message.html">Message</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-gear"></i>
+          <a href="#">Profile Setting </a>
+        </li>
+        <li>
+          <i class="fa-solid fa-key"></i>
+          <a href="#">Change Password </a>
+        </li>
+        <li>
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <a href="#">Logout</a>
+        </li>
+      </div>
+    </section>
+
+    <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+
+        <div class="profile">
+          <i class="fa-solid fa-bell"></i>
+          <img src="../assets/img/patients/patient1.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="board">
+        <header class="margin">
+          <nav>
+            <ul class="tabs">
+              <li class="tab is-active">
+                <a data-switcher data-tab="1">Appointments</a>
+              </li>
+              <li class="tab">
+                <a data-switcher data-tab="2">Prescriptions</a>
+              </li>
+              <li class="tab">
+                <a data-switcher data-tab="3">Medical Records</a>
+              </li>
+              <li class="tab">
+                <a data-switcher data-tab="4">Billing</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section class="pages margin">
+            <div class="page is-active" data-page="1">
+              
+                  <table id="example" class="display" style="width:100%">
+                    <thead>
+                      <tr>
+                        <td>Doctor</td>
+                        <td>Appt Date</td>
+                        <td>Booking Date</td>
+                        <td>Amount</td>
+                        <td>Follow Up</td>
+                        <td>Status</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                          <td class="people">
+                            <img src="../assets/img/doctors/doctor-06.jpg" alt="" />
+                            <div class="people-de">
+                              <h5>Dr. Ruby Perrin</h5>
+                              <p>Dental</p>
+                            </div>
+                          </td>
+                          <td class="date">
+                            <h5>14 Nov 2019</h5>
+                            <p>6.00 PM</p>
+                          </td>
+                          <td class="people-des">
+                            <h5>12 Nov 2019</h5>
+                          </td>
+                          <td class="active">
+                            <h5>$160</h5>
+                          </td>
+                          <td class="role">
+                            <h5>16 Nov 2019</h5>
+                          </td>
+                          <td class="people-des">
+                            <div class="confirm">
+                              <h5>Confirm</h5>
+                            </div>
+                          </td>
+                          <td class="edit">
+                            <span class="edit-btn"
+                              ><i class="fa-solid fa-print"></i
+                              ><a href="#" style="margin-left: 10px">Print</a></span
+                            >
+                            <span class="edit-btn">
+                              <i class="fa-regular fa-eye"></i
+                              ><a href="#" style="margin-left: 10px">View</a></span
+                            >
+                          </td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                 
+            </div>
+            <div class="page" data-page="2">
+              <table width="100%">
+                <thead>
+                  <tr>
+                    <td>Date</td>
+                    <td>Name</td>
+                    <td>Created by</td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="date">
+                      <h5>14 Nov 2019</h5>
+                    </td>
+                    <td class="date">
+                      <h5>Prescription 1</h5>
+                    </td>
+                    <td class="people">
+                      <img src="../assets/img/doctors/doctor-06.jpg" alt="" />
+                      <div class="people-de">
+                        <h5>Dr. Ruby Perrin</h5>
+                        <p>Dental</p>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <span class="edit-btn"
+                        ><i class="fa-solid fa-print"></i
+                        ><a href="#" style="margin-left: 10px">Print</a></span
+                      >
+                      <span class="edit-btn">
+                        <i class="fa-regular fa-eye"></i
+                        ><a href="#" style="margin-left: 10px">View</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="page" data-page="3">
+              <table width="100%">
+                <thead>
+                  <tr>
+                    <td>ID</td>
+                    <td>Date</td>
+                    <td>Description</td>
+                    <td>Attachment</td>
+                    <td>Created</td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="date">
+                      <h5>#MR-0010</h5>
+                    </td>
+                    <td class="date">
+                      <h5>14 Nov 2019</h5>
+                    </td>
+                    <td class="people-des">
+                      <h5>Dental Filling</h5>
+                    </td>
+                    <td class="active">
+                      <h5>dental-test.pdf</h5>
+                    </td>
+
+                    <td class="people">
+                      <img src="../assets/img/doctors/doctor-06.jpg" alt="" />
+                      <div class="people-de">
+                        <h5>Dr. Ruby Perrin</h5>
+                        <p>Dental</p>
+                      </div>
+                    </td>
+                    <td class="edit">
+                      <span class="edit-btn"
+                        ><i class="fa-solid fa-print"></i
+                        ><a href="#" style="margin-left: 10px">Print</a></span
+                      >
+                      <span class="edit-btn">
+                        <i class="fa-regular fa-eye"></i
+                        ><a href="#" style="margin-left: 10px">View</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="page" data-page="4">
+              <table width="100%">
+                <thead>
+                  <tr>
+                    <td>Invoice No</td>
+                    <td>Doctor</td>
+                    <td>Amount</td>
+                    <td>Paid On</td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="date">
+                      <h5>#INV-0010</h5>
+                    </td>
+                    <td class="people">
+                      <img src="../assets/img/doctors/doctor-06.jpg" alt="" />
+                      <div class="people-de">
+                        <h5>Dr. Ruby Perrin</h5>
+                        <p>Dental</p>
+                      </div>
+                    </td>
+                    <td class="people-des">
+                      <h5>$450</h5>
+                    </td>
+                    <td class="active">
+                      <h5>14 Nov 2019</h5>
+                    </td>
+                    <td class="edit">
+                      <span class="edit-btn"
+                        ><i class="fa-solid fa-print"></i
+                        ><a href="#" style="margin-left: 10px">Print</a></span
+                      >
+                      <span class="edit-btn">
+                        <i class="fa-regular fa-eye"></i
+                        ><a href="#" style="margin-left: 10px">View</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <script src="../js/Patients_Dashboard.js"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("#menu").toggleClass("active");
+      });
+      // datatable
+      $(document).ready(function () {
+      $('#example').DataTable();
+     });
+
+    </script>
+  </body>
+</html>

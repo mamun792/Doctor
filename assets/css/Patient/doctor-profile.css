@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  background: #e5e7eb;
+  position: relative;
+}
+.Doctor-headiny {
+  background: #fff;
+  padding: 3rem;
+  margin: 1.6rem 15rem 0 15rem;
+}
+.card1 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 0 10px 10px 1px;
+}
+.patients-image img {
+  margin: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.patients-info {
+  display: flex;
+  justify-content: space-between;
+}
+.patients-details {
+  margin: 0.8rem;
+}
+.patients-details i {
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.patients-details p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+}
+.Patients-btn {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  padding-left: 15rem;
+}
+.Doctor-heading-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-size {
+  border: 0.5px solid black;
+  padding: 15px;
+}
+.Doctor-info-section {
+  background: #fff;
+  margin: 1.6rem 15rem;
+  padding: 1rem;
+}
+.About-me p {
+  padding: 0.2rem 8rem 1rem 2rem;
+}
+.vr-position {
+  padding-left: 2rem;
+  display: flex;
+  margin-top: 1rem;
+}
+.vr {
+  width: 3rem;
+  position: relative;
+}
+.Doctor-education-info {
+  line-height: 5px;
+  margin: 1rem 2rem;
+}
+.Doctor-education-info2 {
+  position: absolute;
+  top: 44rem;
+}
+.Doctor-education-info4 {
+  position: absolute;
+  top: 59rem;
+}
+.Doctor-education-info3 {
+  line-height: 5px;
+  margin: 1rem 2.8rem;
+}
+.bullet-points {
+  font-size: 3rem;
+  color: rgb(218, 34, 74);
+  position: absolute;
+}
+.Work-Experience {
+  margin-top: 2rem;
+}
